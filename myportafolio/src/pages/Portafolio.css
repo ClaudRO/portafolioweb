@@ -1,0 +1,427 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1%;
+    grid-template-rows: repeat(1 , 1fr);
+    color: aliceblue;
+    max-width: 100%;
+    
+    
+    
+}
+.wrapper h2{
+    margin-bottom: 0;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+.wrapper a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper nav ul{
+    display: flex; /* Cambia a display: flex si prefieres flexbox */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed; /* Fija la barra en su posición */
+    /* controla el largo de la barra */
+    background-color: #333;
+    color: white;
+    padding: 1% 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 70%;
+    border-radius: 30px;
+    font-size: smaller;
+    top: 10px; /* Puedes ajustar este valor para alinear verticalmente la barra */
+    left: 50%; /* Centra horizontalmente la barra en la pantalla */
+    transform: translateX(-50%); /* Ajusta para que el centro de la barra esté en el centro de la pantalla */
+    width: auto; /* Asegúrate de que el ancho de la barra se ajuste a su contenido */
+    max-width: 90%;
+    list-style-type: none; /* Elimina los puntos de la lista */
+
+}
+
+
+
+
+
+.inicio {
+    margin-top: 15vh;
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    font-size:larger;
+}
+
+.inicio section{
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+
+}
+.inicio section div{
+    display: flex;
+    align-items: center; 
+}
+.inicio article section div a{
+    display: flex;
+    border: solid rebeccapurple;
+    background: #333;
+    margin-left: 2%;
+    border-radius: 9999px;
+    height: 10%;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+}
+.contenedorImg{
+    width: 10vh; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 10vh; /* Asegúrate de que el ancho y alto sean iguales */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.inicio img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.especial{
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+    align-content: center;
+    margin-top: 3vh;
+    font-size: 1rem;
+
+}
+
+.inicio article div a{
+    display: flex;
+    border: solid rgb(179, 179, 198);
+    border-radius: 9999px;
+    border-width: 1px;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap:1vh;
+    align-items: center;  
+    background: #333;
+}
+
+.experiencia {
+    margin-top: 10vh;
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+    
+}
+
+.experiencia h2{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    padding: 0;
+}
+
+.contenedor{
+    margin-top: 5vh;
+    display: flex;    
+    gap: 5%;
+}
+
+.contenedor section{
+    display: flex;
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: justify;
+}
+
+
+
+.proyectos {
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: row;   
+    gap: 10px;
+    align-items: center;
+    
+
+}
+.proyectos div a{
+    display: flex;
+    max-width: 10vh;
+    border: solid rgb(179, 179, 198);
+    border-radius: 9999px;
+    border-width: 1px;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap:1vh;
+    justify-content: center;
+    align-items: center;  
+    background: #333;
+}
+.proyectos section article div ul{
+    display: flex;
+    gap: 5vh;
+    
+}
+.proyectos section article {
+    display: flex;
+    align-items: center;
+    gap: 2.5vh;
+    margin-bottom: 5vh;
+}
+.proyectos section article div{
+    display: flex;
+    flex-direction: column;
+}
+.proyectos section div h2{
+    font-size: 1.6rem;
+
+     font-weight: bold;
+}
+.proyectos img {
+    width: 100%;
+    max-height: 50vh;
+    min-width:40vh;/*The fight everyone was waiting for and wanted to seecvh;
+*/  background: #171717;
+    object-fit: contain;/* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+}
+.educacion{
+    grid-column: 2 / 6;
+    grid-row: 4 / 5;
+}
+.educacion ul{
+    margin-top: 5vh;
+}
+
+
+
+.sobreMi{
+    margin-top: 2vh;
+    grid-column: 2 / 6;
+    grid-row: 5 / 6;
+    
+}
+.sobreMi section{
+    display: flex;
+}
+.sobreMi article section {
+    display: flex;
+    gap: 5vh;
+}
+.sobreMi p{
+    margin: 0;
+}
+.sobreMi div {
+    display: flex;
+    gap: 3vh;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+
+.sobreMi img{
+    height: 250px;
+    border: solid rgb(25, 25, 156);
+    border-radius: 10px;
+    border-width: 0.5vh;
+    object-fit:contain;
+    transform: rotate(4deg) scale(0.9);
+}
+.wrapper footer{
+    margin-top: 5vh;
+    grid-column: 2 / 6;
+    grid-row: 11 / 12;
+    font-size:smaller;
+    
+}
+.wrapper footer article {
+    display: flex;
+    justify-content: space-between;
+   padding-bottom: 5vh;
+}
+.wrapper footer article div {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* Estilos para móviles pequeños */
+
+@media (width < 480px) {
+    
+        .wrapper nav ul {
+            width: 100vh;
+            padding-inline: 2vh;
+            padding: 1vh;
+        }
+        /*
+        .wrapper h2{
+            font-size: 2rem;
+        }
+        .wrapper {
+            font-size: 1rem;
+        }
+        .inicio{
+            grid-column: 1 / -1;
+            padding: 10%;
+            margin-top: 5%;
+        }
+        
+        .inicio article section h1{
+            margin-top:2%
+        }
+        .inicio article section div{
+            font-size: 0.9rem;
+        }
+
+        .experiencia svg{
+            width:28px;
+            height:28px;
+        }
+        .experiencia {
+            margin:0;
+            grid-column: 1/-1;
+            padding: 10%;
+        }
+        .experiencia h2{
+            margin-top: 0;
+        }
+        .contenedor p{
+            margin: 0.2vh;
+        }
+        .contenedor{
+            display: flex;
+        }
+        .contenedor div{
+            display: flex;
+            flex-direction: column;
+            gap:0;
+            margin-right: 5vh;
+            
+            
+        }
+        .contenedor section{
+            max-width: 30vh;        
+        }
+        .seven{
+            grid-column: 1/-1;
+            grid-row: 4/5;
+            padding: 10%;
+            padding-top: 0;
+            padding-bottom: 0;
+            
+        }*/
+    .proyectos section{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .proyectos img {
+        max-height: auto; /* Permite que la altura se ajuste automáticamente */
+        min-width: 10vh; /* Elimina el ancho mínimo */
+    }
+    .proyectos section article div ul{
+        display:block;
+
+        gap: 2vh;
+        padding: 0;
+        margin-left: 1vh;
+        margin-right: 1vh;
+        
+        list-style-type: none;
+
+    }/*
+        
+        .seven h2{
+            margin-top: 0;
+        }
+       
+
+        .ten img{
+            height: 250px;
+        
+        }
+        .ten{
+            display: flex;
+            flex-direction: column;
+        }    
+        .ten{
+            grid-column: 1/-1;
+            padding: 10%;
+        }
+        .ten h2{
+            font-size: 1.4rem;
+        }
+        */
+        .sobreMi article section {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            align-items: center;
+            
+        }/*
+        .sobreMi article div{ 
+            display: flex;
+            
+            
+        }
+        .sobreMi img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+        .sobreMi{
+            grid-column: 1/-1;
+            padding: 1rem;
+            text-align: justify;
+        }
+        .sobreMi{
+            margin-top: 2vh;
+            grid-column: 2 / 6;
+            grid-row: 10 / 11;
+            
+        }
+        
+        
+        .sobreMi div {
+            display: flex;
+            gap: 3vh;
+            align-items: center;
+            text-align: justify;
+        }
+        
+        .sobreMi img{
+            margin-top: 2vh;
+            height: 250px;
+            border: solid rgb(25, 25, 156);
+            border-width: 0.5vh;
+            border-color: aqua;
+            object-fit:contain;
+            transform: rotate(2deg) scale(0.9);
+        }
+        */
+    }
+    
+
+/* Estilos para tablets grandes y laptops pequeñas */
+@media (width < 1024px) {
+    /* estilos específicos aquí */
+}
+
+/* Estilos para laptops y desktops pequeñas */
+@media (width < 1200px) {
+    /* estilos específicos aquí */
+}
